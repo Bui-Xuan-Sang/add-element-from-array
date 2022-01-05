@@ -24,16 +24,15 @@ public class Main {
         System.out.println("Nhập vị trí muốn thêm: ");
         int index = scanner.nextInt();
         int newArr[] = addElementToArray(index,arr,addNumber);
-        System.out.println("Mảng  sau khi thêm phần tử " + addNumber + " là: ");
+        System.out.print("Mảng  sau khi thêm phần tử " + addNumber + " là: " + "\n");
         showArray(newArr);
     }
 
     public static void showArray(int[] array){
         for (int element : array){
-            System.out.println(element);
+            System.out.print(element  + "\n");
         }
     }
-
     public static int[] addElementToArray(int index, int[] arr,int addNumber){
         int newArr[] = new int[arr.length + 1];
         for (int i = 0; i < newArr.length;i++){
